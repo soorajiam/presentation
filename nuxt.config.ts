@@ -18,25 +18,23 @@ export default defineNuxtConfig({
   },
   primevue: {
     options: {
-        theme: {
-            preset: Aura
-        }
-    }
-  },
-  vite: {
-    module: {
-      rules: [
-        {
-          test: /\.md$/,
-          loader: 'raw-loader'
-        }
-      ]
+      theme: {
+        preset: Aura
+      }
     }
   },
   nitro: {
     preset: 'node',
+    output: {
+      dir: 'dist',
+      serverDir: 'dist/server',
+      publicDir: 'dist/public'
+    }
   },
   experimental: {
     payloadExtraction: false
+  },
+  app: {
+    buildAssetsDir: '/_nuxt/'
   }
 })
