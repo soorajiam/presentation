@@ -1,0 +1,5 @@
+[[d1_databases]]
+binding = "quiz-db"
+database_name = "quiz-app-db"
+database_id = "bc9a5650-9e5f-4988-a8bd-d16c3d98f957"
+migrations_dir = "server/database/migrations" 

@@ -29,6 +29,20 @@ export default defineNuxtConfig({
       dir: 'dist',
       serverDir: 'dist/server',
       publicDir: 'dist/public'
+    },
+    experimental: {
+      database: true
+    },
+    database: {
+      myDatabase: {
+        connector: 'cloudflare-d1',
+        options: {
+          bindingName: 'quiz-db',
+          migrations: {
+            dir: './server/database/migrations'
+          }
+        }
+      }
     }
   },
   experimental: {
