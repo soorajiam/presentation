@@ -1,0 +1,314 @@
+{
+  "slides": [
+    {
+      "title": "Cloud computing essentials and projects on edge with Cloudflare",
+      "content": [
+        "A comprehensive guide to modern cloud infrastructure and architecture patterns"
+      ]
+    },
+    {
+      "title": "Who I am",
+      "content": [
+        "• Sooraj",
+        "Product Lead engineer, Obso Automation",
+        [
+          "• Keele Advanced CS grad 2022",
+          "• Best performance in cohort", 
+          "• British council GREAT Scholar",
+          "• Working on instu.com, Paxable, Opentranslate.dev",
+          "• IEEE CS Volunteer for 6 years",
+          "• Led my chapter to win best Global chapter award",
+          "• Led a team of 100+ students and trained them"
+        ]
+      ]
+    },
+    {
+      "title": "Let's set some goals",
+      "content": [
+        [
+          "• GET CERTIFIED - AWS, Azure or GCP",
+          "• HOST YOUR PORTFOLIO",
+          "• UNDERSTAND CLOUD ARCHITECTURE PATTERNS",
+          "• BUILD SCALABLE SYSTEMS"
+        ]
+      ]
+    },
+    {
+      "title": "What is cloud computing?",
+      "content": [
+        "Cloud computing is the delivery of computing services over the internet ('the cloud')",
+        [
+          "Key Benefits:",
+          "• Pay-as-you-go pricing",
+          "• Global scale in minutes",
+          "• Increased agility and innovation",
+          "• Built-in redundancy and reliability",
+          "• Enhanced security features"
+        ]
+      ]
+    },
+    {
+      "title": "Think of it as Pizza as a Service 🍕",
+      "content": [
+        [
+          "Making Pizza at Home (Traditional Computing):",
+          "- Buy all ingredients",
+          "- Own an oven",
+          "- Cook everything yourself",
+          "- Clean up after",
+          "- Handle maintenance",
+          "- Deal with power outages"
+        ],
+        [
+          "Ordering Pizza (Cloud Computing):",
+          "- Order what you need",
+          "- Pay for what you eat",
+          "- No kitchen needed",
+          "- No cleanup required",
+          "- No maintenance worries",
+          "- Built-in backup options"
+        ],
+        "Key Point: Just like you don't need a pizza oven at home, you don't usually need servers in your office!"
+      ]
+    },
+    {
+      "title": "Cloud Service Models",
+      "content": [
+        "Let's Stick to Our Pizza Analogy!",
+        [
+          "Infrastructure as a Service (IaaS)",
+          "- Like renting a kitchen",
+          "- You bring ingredients and cook",
+          "- Example: Amazon EC2, Azure VMs",
+          "- Best for: Maximum control and flexibility",
+          "- You manage: OS, middleware, applications"
+        ],
+        [
+          "Platform as a Service (PaaS)",
+          "- Like having the kitchen and basic ingredients",
+          "- You just follow the recipe",
+          "- Example: Heroku, Google App Engine",
+          "- Best for: Developers focusing on code",
+          "- Provider manages: OS, runtime, scaling"
+        ],
+        [
+          "Software as a Service (SaaS)",
+          "- Like ordering a ready-made pizza",
+          "- Just eat and enjoy",
+          "- Example: Gmail, Salesforce",
+          "- Best for: End-user applications",
+          "- Provider manages: Everything"
+        ],
+        [
+          "Function as a Service (FaaS)",
+          "- Like ordering a single slice",
+          "- Pay only when eating",
+          "- Example: AWS Lambda, Azure Functions",
+          "- Best for: Event-driven tasks",
+          "- Serverless architecture"
+        ]
+      ]
+    },
+    {
+      "title": "Cloud Deployment Models",
+      "content": [
+        [
+          "Public Cloud",
+          "- Shared infrastructure",
+          "- Pay as you go",
+          "- Quick scaling",
+          "- Examples: AWS, Azure, GCP"
+        ],
+        [
+          "Private Cloud",
+          "- Dedicated infrastructure",
+          "- Complete control",
+          "- Higher security",
+          "- Examples: OpenStack, VMware"
+        ],
+        [
+          "Hybrid Cloud",
+          "- Mix of public and private",
+          "- Best of both worlds",
+          "- Complex but flexible",
+          "- Common in enterprises"
+        ],
+        [
+          "Multi-Cloud",
+          "- Multiple cloud providers",
+          "- Avoid vendor lock-in",
+          "- Optimize costs",
+          "- Enhanced reliability"
+        ]
+      ]
+    },
+    {
+      "title": "Understanding Computer Networks - The OSI Model",
+      "content": [
+        "It's Just Like a Postal System! 📬",
+        "Think of sending a letter to your friend:",
+        [
+          "Layer 1 (Physical) - The Road",
+          "- Like the actual roads and paths",
+          "- In networks: Actual cables and wireless signals",
+          "- 'How does the message physically travel?'",
+          "- Cloud relevance: Data centers, fiber connections"
+        ],
+        [
+          "Layer 2 (Data Link) - The Local Post Office",
+          "- Like addressing letters to local addresses",
+          "- In networks: MAC addresses, local network",
+          "- 'How do devices talk within the same neighborhood?'",
+          "- Cloud relevance: Virtual networks, VLANs"
+        ],
+        [
+          "Layer 3 (Network) - The National Postal System",
+          "- Like the system that routes between cities",
+          "- In networks: IP addresses, routing",
+          "- Famous example: 'How does a letter get from New York to LA?'",
+          "- Cloud relevance: VPCs, subnets, routing tables"
+        ],
+        [
+          "Layer 4 (Transport) - Package Types",
+          "- Like choosing between regular mail or express delivery",
+          "- TCP: Like certified mail (reliable, tracked)",
+          "- UDP: Like regular mail (faster but no guarantees)",
+          "- Cloud relevance: Load balancers, security groups"
+        ],
+        [
+          "Layer 7 (Application) - The Letter Content",
+          "- Like the actual message you write",
+          "- In networks: HTTP, FTP, SSH",
+          "- Cloud relevance: Web services, APIs, microservices"
+        ]
+      ]
+    },
+    {
+      "title": "Virtual Private Cloud (VPC)",
+      "content": [
+        "Your Private City in the Cloud 🌆",
+        [
+          "Public Cloud = Public City",
+          "- Everyone shares streets",
+          "- Public transportation",
+          "- Open businesses",
+          "- Shared resources",
+          "- Default security"
+        ],
+        [
+          "VPC = Private Building",
+          "- Private roads (subnets)",
+          "- Controlled entrances (security groups)",
+          "- Your own rules (NACLs)",
+          "- Custom layout (network design)",
+          "- Complete isolation",
+          "- Custom routing",
+          "- VPN connections"
+        ]
+      ]
+    },
+    {
+      "title": "IP Addresses & Subnets",
+      "content": [
+        "Think of a Large Office Building 🏢",
+        [
+          "IP Addresses",
+          "- Like room numbers in a building",
+          "- 192.168.1.1 is like saying 'Floor 192, Room 1'",
+          "- Public IP: The building's street address",
+          "- Private IP: The room number inside",
+          "- IPv4 vs IPv6 considerations"
+        ],
+        [
+          "Subnets",
+          "- Like dividing the building into departments",
+          "- Public subnets: Reception areas",
+          "- Private subnets: Secure offices",
+          "- CIDR notation explained",
+          "- Subnet masks and calculations"
+        ]
+      ]
+    },
+    {
+      "title": "Cloud Database Types",
+      "content": [
+        [
+          "When to Use Relational (RDS):",
+          "- Data is structured",
+          "- Need ACID compliance",
+          "- Complex queries needed",
+          "- Transactions important",
+          "- Examples: PostgreSQL, MySQL"
+        ],
+        [
+          "When to Use NoSQL:",
+          "- Flexible schema needed",
+          "- Huge scale expected",
+          "- Quick access required",
+          "- Simple queries suffice",
+          "- Examples: MongoDB, DynamoDB"
+        ],
+        [
+          "When to Use Cache:",
+          "- Speed is crucial",
+          "- Data is temporary",
+          "- Reducing database load",
+          "- Real-time features",
+          "- Examples: Redis, Memcached"
+        ],
+        [
+          "When to Use Data Warehouse:",
+          "- Analytics needed",
+          "- Historical data important",
+          "- Complex reporting",
+          "- Examples: Redshift, Snowflake"
+        ]
+      ]
+    },
+    {
+      "title": "Cloud Security Best Practices",
+      "content": [
+        [
+          "Identity and Access Management (IAM)",
+          "- Principle of least privilege",
+          "- Role-based access control",
+          "- Multi-factor authentication",
+          "- Regular access reviews"
+        ],
+        [
+          "Network Security",
+          "- Security groups",
+          "- Network ACLs",
+          "- VPN and Direct Connect",
+          "- DDoS protection"
+        ],
+        [
+          "Data Security",
+          "- Encryption at rest",
+          "- Encryption in transit",
+          "- Key management",
+          "- Regular backups"
+        ]
+      ]
+    },
+    {
+      "title": "Cloud Cost Optimization",
+      "content": [
+        [
+          "Key Strategies:",
+          "- Right-sizing instances",
+          "- Using spot instances",
+          "- Reserved capacity planning",
+          "- Auto-scaling groups"
+        ],
+        [
+          "Monitoring and Analysis:",
+          "- Cost allocation tags",
+          "- Budget alerts",
+          "- Usage patterns",
+          "- Performance metrics"
+        ]
+      ]
+    }
+  ]
+}
