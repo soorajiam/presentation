@@ -24,7 +24,7 @@ export default defineNuxtConfig({
     }
   },
   nitro: {
-    preset: 'node',
+    preset: 'cloudflare-pages',
     output: {
       dir: 'dist',
       serverDir: 'dist/server',
